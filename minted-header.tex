@@ -1,0 +1,42 @@
+% minted-header.tex
+% Provides beautiful code highlighting using minted + pygments
+\usepackage{fontspec}
+% (optional) if you want to set fonts here too; pandoc -V mainfont/-V monofont also works
+% \setmainfont{Your System Font Name}
+% \setmonofont{JetBrains Mono}[Scale=0.96]
+
+\usepackage{xcolor}
+\definecolor{codebg}{gray}{0.97}
+\definecolor{codeborder}{gray}{0.85}
+
+\usepackage{minted}
+% minted options:
+% style = pygments style (e.g. tango, monokai, friendly, default)
+\usemintedstyle{tango}
+
+% global minted settings used by pandoc for code blocks
+\setminted{
+  fontsize=\small,
+  linenos,
+  breaklines,
+  numbersep=5pt,
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.05,
+  bgcolor=codebg,
+  rulecolor=\color{codeborder},
+  xleftmargin=0.5em,
+  xrightmargin=0.5em
+}
+
+% small tweak for code font size vs body:
+\renewcommand{\ttdefault}{\ttfamily}
+
+% Fancy header/footer (optional)
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear header
+\fancyfoot{} % clear footer
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}

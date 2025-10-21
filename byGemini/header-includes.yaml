@@ -1,0 +1,5 @@
+---
+header-includes:
+  - \usepackage{anyfontsize}
+  - \fontsize{8pt}{10pt}\selectfont
+---

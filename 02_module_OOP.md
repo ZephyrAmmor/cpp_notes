@@ -310,8 +310,3 @@ OOP
 4. **Smart Calculator:** Operator overloading for different datatypes.
 5. **Employee Management System:** Base and derived roles.
 
----
-
-## 🔮 Transition to Next Module
-
-➡️ **Module 3: Memory, Pointers & Dynamic Allocation** — where you learn how objects live, move, and die in memory — mastering heap, stack, and resource management in C++.

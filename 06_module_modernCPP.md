@@ -239,7 +239,3 @@ Simplify async and generator functions.
 | Memory      | Smart Pointers, Move Semantics  | Safer, faster resource management |
 | Functions   | Lambdas, Ranges, Coroutines     | Modern expressiveness             |
 | Templates   | Concepts                        | Safer generic code                |
-
----
-
-**Next Module → Module 7: Advanced C++ Topics (Exception Handling, File I/O, Multithreading)**
